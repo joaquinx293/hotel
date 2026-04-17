@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Aguas claras</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg " id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">Hotel Aguas Claras</a>
+            <button class="navbar-toggler border-0" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto gap-1 align-items-lg-center">
+                <li class="nav-item"><a class="nav-link" href="#habitaciones">Habitaciones</a></li>
+                <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+                <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                <li class="nav-item ms-lg-3">
+                <button class="btn btn-primary-custom rounded-pill"
+                    data-bs-toggle="modal" data-bs-target="#modalReserva">
+                    Reservar ahora
+                </button>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="hero">
+
+  <div id="carouselHero" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+
+      <div class="carousel-item active hero-item hero-item-1">
+        <div class="hero-overlay">
+          <div class="text-center hero-caption px-3">
+            <h1>Una experiencia Medival
+            </h1>
+            <p class="mt-3 mb-4">Donde podras vivir en un castillo</p>
+            <button class="btn btn-primary-custom btn-lg rounded-pill px-4"
+              data-bs-toggle="modal" data-bs-target="#modalReserva">
+
+              Reserva tu estadía
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item hero-item hero-item-2">
+        <div class="hero-overlay">
+          <div class="text-center hero-caption px-3">
+            <h1>
+                Vive como un caballero medieval
+            </h1>
+            <p class="mt-3 mb-4">Los reyes aprueban este hotel </p>
+            <a href="#servicios" class="btn btn-primary-custom btn-lg rounded-pill px-4">Ver servicios</a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item hero-item hero-item-3">
+        <div class="hero-overlay">
+          <div class="text-center hero-caption px-3">
+            <h1>Habitaciones de 1</h1>
+            <p class="mt-3 mb-4">
+                Disfruta de la naturalesa</p>
+            <a href="#habitaciones" class="btn btn-primary-custom btn-lg rounded-pill px-4">Ver habitaciones</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselHero" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselHero" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+    </div> 
+    </div> 
+    </section> 
+
+    <section id="habitaciones" class="py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Nuestras Habitaciones</h2>
+    </div>
+    <div class="row g-4">
+
+      <div class="col-12 col-sm-6 col-lg-3 room-card">
+        <div class="card h-100">
+          <div class="card-img-wrapper">
+            <img src="habitacion-4.jpg" class="card-img-top" alt="Habitación Simple" />
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Habitación Simple</h5>
+            <p class="card-text text-muted small flex-grow-1">
+              Acogedora habitación con cama doble, escritorio y vista al jardín. Perfecta para viajeros solos.
+            </p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="price-badge">$30.000 pesos / noche</span>
+              <button class="btn btn-sm btn-outline-secondary rounded-pill"
+                data-bs-toggle="modal" data-bs-target="#modalReserva">Reservar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3 room-card">
+        <div class="card h-100">
+          <div class="card-img-wrapper">
+            <img src="habitacion-3.jpg" class="card-img-top" alt="Habitación Doble" />
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Habitación Doble</h5>
+            <p class="card-text text-muted small flex-grow-1">
+              Amplia habitación con dos camas individuales, ideal para familias o amigos en viaje.
+            </p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="price-badge">$60.000 / noche</span>
+              <button class="btn btn-sm btn-outline-secondary rounded-pill"
+                data-bs-toggle="modal" data-bs-target="#modalReserva">Reservar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-12 col-sm-6 col-lg-3 room-card">
+        <div class="card h-100">
+          <div class="card-img-wrapper">
+            <img src="habitacion-2.jpg" class="card-img-top" alt="Suite Deluxe" />
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Suite Deluxe</h5>
+            <p class="card-text text-muted small flex-grow-1">
+              Suite con sala de estar separada, jacuzzi y vista panorámica al mar. Lujo absoluto.
+            </p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="price-badge">90.000 / noche</span>
+              <button class="btn btn-sm btn-outline-secondary rounded-pill"
+                data-bs-toggle="modal" data-bs-target="#modalReserva">Reservar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3 room-card">
+        <div class="card h-100">
+          <div class="card-img-wrapper">
+            <img src="habitacion-1.jpg" class="card-img-top" alt="Penthouse" />
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Penthouse</h5>
+            <p class="card-text text-muted small flex-grow-1">
+              El piso más alto del hotel. Terraza privada, cocina equipada y servicio personalizado 24/7.
+            </p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="price-badge"> 120.000/ noche</span>
+              <button class="btn btn-sm btn-outline-secondary rounded-pill"
+                data-bs-toggle="modal" data-bs-target="#modalReserva">Reservar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+  </div>
+</section>
+
+<section id="servicios" class="py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Nuestros Servicios</h2>
+      <p class="text-muted mt-3">Todo lo que necesitas en un solo lugar</p>
+    </div>
+    <div class="row g-4 text-center">
+
+      <div class="col-6 col-md-3 service-card">
+        <h6>Desayuno buffet</h6>
+      </div>
+
+      <div class="col-6 col-md-3 service-card">
+        <h6>Piscina exterior</h6>
+      </div>
+
+      <div class="col-6 col-md-3 service-card">
+        <h6>Clases de Yoga</h6>
+      </div>
+
+      <div class="col-6 col-md-3 service-card">
+
+        <h6>WiFi en todo el hotel</h6>
+      </div>
+
+      <div class="col-6 col-md-3 service-card">
+        <h6>Estacionamiento</h6>
+      </div>
+
+      <div class="col-6 col-md-3 service-card">
+        <h6>Clases de historia Medieval</h6>
+      </div>
+
+      <div class="col-6 col-md-3 service-card">
+
+        <h6>Viñedos</h6>
+      </div>
+
+      <div class="col-6 col-md-3 service-card">
+
+        <h6>Paseos a caballo</h6>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
